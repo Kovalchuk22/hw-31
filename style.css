@@ -1,0 +1,34 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: moveSquare 4s infinite;
+}
+.con {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes moveSquare {
+    0% {
+        transform: translate(0, 0);
+        background-color: blue;
+    }
+    20% {
+        transform: translate(200px, 0);
+        background-color: rgb(51, 255, 0);
+    }
+    50% {
+        transform: translate(200px, -200px);
+        background-color: rgb(217, 255, 3);
+    }
+    80% {
+        transform: translate(0, -200px);
+        background-color: rgb(255, 0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+        background-color: blue;
+    }
+}
